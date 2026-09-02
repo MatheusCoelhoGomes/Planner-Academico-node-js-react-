@@ -1,19 +1,30 @@
 import React from "react"
-import { createBrowserRouter, RouterProvider} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom'
 
 import NavBar from "./components/NavBar/NavBar.jsx"
 import NotasPage from "./pages/NotasPage.jsx"
 import DesempenhoPage from "./pages/DesempenhoPage.jsx"
 import AgendaPage from "./pages/AgendaPage.jsx"
 
+const Layout = () => {
+    return (
+        <div className="container">
+            <NavBar />
+            <Outlet />
+        </div>
+    );
+};
+
+
+
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <NavBar />,
+        element: <Layout />,
         children: [
             {
-                path: '/Notas',
-            element: <NotasPage />,
+                  path: '/Notas',
+                element: <NotasPage />,
             },
             {
                 path: '/Desempenho',
@@ -31,7 +42,7 @@ const router = createBrowserRouter([
 function App() {
     return(
         <div className="conteiner">
-                <RouterProvider router={router}/>
+            <RouterProvider router={router}/>
         </div>
     )   
 }

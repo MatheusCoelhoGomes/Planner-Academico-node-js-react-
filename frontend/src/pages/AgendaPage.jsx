@@ -1,10 +1,10 @@
 import React from "react"
 import './AgendaPage.css'
-
+import Calendario from "../components/Calendario/Calendario.jsx"
 const AgendaPage = () => {
     return(
-        <div>
-            <h1>Agenda</h1>
+        <div className="Agenda-container">
+            <Calendario />
         </div>
     )
 }
