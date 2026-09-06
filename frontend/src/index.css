@@ -6,9 +6,8 @@
 }
 
 .conteiner{
-    width: 100vw;
-    min-height: 100vh;
-    background-color: #FFFFFF;
-    
+    min-width: 100vw;
+    min-height: 100vw;
+    background-color: #07070a;
 }
 

@@ -1,0 +1,14 @@
+
+
+.form-data{
+    position: absolute;
+    background-color: #3b3b4727;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    justify-content: center;
+    min-height: 400px;
+    width: 20%;
+    top: 25%;
+    right: 20%;
+    display: none;
+}

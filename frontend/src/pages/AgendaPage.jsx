@@ -1,5 +1,6 @@
 import React from "react"
 import './AgendaPage.css'
+import CriarData from "../components/Calendario/CriarData.jsx"
 
 function diasMes() {
     return(
@@ -30,8 +31,8 @@ const AgendaPage = () => {
                 </div>
             </div>
             <div className="gerenciar-datas">
-                <div className="criar-data"></div>
-                    <h1>button</h1>
+                <CriarData />
+                
                 <div className="datas-criadas"></div>
                     <h1>categorias</h1>
             </div>

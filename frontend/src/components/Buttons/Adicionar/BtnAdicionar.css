@@ -1,0 +1,11 @@
+.buttonAdd{
+    border: 1px solid #525050;
+    background-color: #47474dcb;
+    border-radius: 20px;
+}
+
+.buttonAdd h1{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 7px;
+}
