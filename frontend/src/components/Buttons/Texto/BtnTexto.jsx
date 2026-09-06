@@ -1,7 +1,7 @@
 
-import './BtnAdicionar.css'
+import './BtnTexto.css'
 
-const BtnAdicionar = ({children,margin,...props},) => {
+const BtnTexto = ({children,margin,...props},) => {
     
     return(
             <button style={{margin}}  className='buttonAdd' {...props}>
@@ -12,4 +12,4 @@ const BtnAdicionar = ({children,margin,...props},) => {
     )
 }
 
-export default BtnAdicionar
+export default BtnTexto

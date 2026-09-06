@@ -1,0 +1,23 @@
+
+@keyframes botaoHover{
+    from{ background-color:  #3b3b4727;}
+    to{background-color: #52505083}
+}
+
+
+.buttonAdd{
+    border: 1px solid #525050;
+    background-color:  #3b3b4727;
+    border-radius: 20px;
+}
+
+.buttonAdd h1{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 7px;
+}
+
+.buttonAdd:hover{
+    animation: botaoHover 200ms ;
+    background-color: #52505083
+}

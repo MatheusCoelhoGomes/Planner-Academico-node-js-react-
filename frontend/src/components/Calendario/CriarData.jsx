@@ -1,6 +1,5 @@
 import './CriarData.css'
-import '../Buttons/Adicionar/BtnAdicionar'
-import BtnAdicionar from '../Buttons/Adicionar/BtnAdicionar'
+import BtnTexto from '../Buttons/Texto/BtnTexto'
 
 
 
@@ -36,10 +35,12 @@ const CriarData = () => {
 
     return(
         <>
-            <BtnAdicionar margin ="50px 0px 0px 0px" onClick={() => {document.querySelector('.form-data').style.display = 'block';} }>Adicionar</BtnAdicionar>
+            <BtnTexto margin ="50px 0px 0px 0px" onClick={() => {document.querySelector('.form-data').style.display = 'block';} }>Adicionar</BtnTexto>
+
 
             <div className="form-data">
-                
+                <div className="form-conteiner">
+                </div>
             </div>
         </>
 

@@ -1,0 +1,23 @@
+@keyframes botaoHover{
+    from{ background-color:  #3b3b4727;}
+    to{background-color: #52505083}
+}
+
+
+.BtnCircular{
+    border: 1px solid #525050;
+    background-color:  #3b3b4727;
+    padding: 2px;
+    border-radius: 100%;
+}
+
+.BtnCircular h1{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 7px;
+}
+
+.BtnCircular:hover{
+    animation: botaoHover 200ms ;
+    background-color: #52505083
+}

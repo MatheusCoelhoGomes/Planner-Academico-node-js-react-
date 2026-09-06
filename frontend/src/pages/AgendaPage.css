@@ -1,8 +1,8 @@
 .calendario-container{
     display: flex;
-    margin: 20px auto;
+    margin: 20px ;
     width: 95%;
-    height: auto;
+    height: 95%;
 }
 
 .calendario{
@@ -12,11 +12,14 @@
     border-bottom: 1px solid #525050;
     border-top: 1px solid #525050;
     border-radius: 30px;
-
-    span{
-        color: #fff;
-    }
 }
+
+.select-data{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
 
 .dias-semana{
     display: grid;
@@ -38,7 +41,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     width: 100%;
-    min-height: 500px;
+    height: 70vh;
 
     div{
         border-right: 1px solid #525050;
@@ -70,7 +73,6 @@ span{
     border-top: 1px solid #525050;
     width: 20%;
     margin-left: 5px;
-    min-height: 500px;
     border-radius: 30px;
 
     padding: 10px;

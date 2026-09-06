@@ -1,6 +1,9 @@
 import React from "react"
 import './AgendaPage.css'
 import CriarData from "../components/Calendario/CriarData.jsx"
+import BtnTexto from "../components/Buttons/Texto/BtnTexto.jsx";
+import BtnCircular from "../components/Buttons/Circular/BtnCircular.jsx"
+
 
 function diasMes() {
     return(
@@ -16,7 +19,12 @@ const AgendaPage = () => {
     return(
         <div className="calendario-container">
             <div className="calendario">
-                <span>data-menu</span>
+                <div className="select-data">
+                    <BtnCircular margin=" 10px"/>
+                    <h1>mês</h1>
+                    <BtnCircular margin=" 10px"/>
+                    <BtnTexto margin=" 10px 35px ">Hoje</BtnTexto>
+                </div>
                 <div className = "dias-semana">
                     <span id= "DOM">DOM</span>
                     <span>SEG</span>
