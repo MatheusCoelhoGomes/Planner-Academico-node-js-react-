@@ -1,16 +1,16 @@
 .navbar{
-    width: 100%;
+    width: 100vw;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #0253aa;
-    padding: 15px 7%;
+    padding: 1em 7%;
 }
 
 h1{
     color: #fff;
-    font-size: 25px;
+    font-size: 1em;
 }
 
 ul{
@@ -24,18 +24,21 @@ a {
 
 ul li{
     display: inline-block;
-    margin: 0 20px;
-    font-size: 18px;
+    margin: 0 1em;
+    font-size: 1em;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
+
+    transition: transform 0.05s linear;
 }
 
 li:hover{
     color: #ccc;
     text-decoration: underline 2px #ccc ;
     text-decoration-thickness: 2px ;
-    text-underline-offset: 5px 
+    text-underline-offset: 5px ;
+    transform :scale(1.05);
 }
 
 

@@ -35,11 +35,12 @@ const CriarData = () => {
 
     return(
         <>
-            <BtnTexto margin ="50px 0px 0px 0px" onClick={() => {document.querySelector('.form-data').style.display = 'block';} }>Adicionar</BtnTexto>
+            <BtnTexto margin ="2em 0em 0em 0em" onClick={() => {document.querySelector('.form-data').style.display = 'block';} }>Adicionar</BtnTexto>
 
 
             <div className="form-data">
                 <div className="form-conteiner">
+                    
                 </div>
             </div>
         </>
