@@ -1,0 +1,90 @@
+.calendario-container{
+    display: flex;
+    margin: 2em ;
+    width: 95%;
+    height: 95%;
+}
+
+.calendario{
+    background-color: #3b3b4727;
+    width: 80%;
+    border-left: 3px solid #525050;
+    border-bottom: 1px solid #525050;
+    border-top: 1px solid #525050;
+    border-radius: 30px;
+}
+
+.select-data{
+    display: flex;
+    align-items: center;
+    margin-left: 5em;
+}
+
+
+.dias-semana{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+
+    span{
+        color:#fff
+    }
+    :nth-child(n){
+        border-right: 1px solid #525050;
+    }
+    :nth-child(7n){
+        border-right: none;
+    }
+}
+
+.dias-mes{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    height: 70vh;
+
+    div{
+        border-right: 1px solid #525050;
+        border-bottom: 1px solid #525050;
+        padding: 0.1em;
+        color: #fff;
+    }
+    :nth-child(7n){
+        border-right: none;
+    }
+    :nth-child(n + 29){
+        border-bottom: none;
+    }
+}
+
+span{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    }
+
+.gerenciar-datas{
+    background-color: #3b3b4727;
+    border-left: 3px solid #525050;
+    border-bottom: 1px solid #525050;
+    border-top: 1px solid #525050;
+    width: 20%;
+    margin-left: 0.5em;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    div{
+        margin-top: 1em;
+    }
+}
